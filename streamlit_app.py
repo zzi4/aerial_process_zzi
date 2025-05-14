@@ -61,8 +61,7 @@ def main():
         print("当前工作目录:", current_dir)
 
         # 设置模型路径
-        model_path = os.path.join(current_dir, "best.pt")
-        # model_path = '/workspaces/aerial_process_zzi/best.pt' # 替换为你的模型路径
+        model_path = st.secrets["model_path"]
         model = YOLO(model_path)
 
         # 显示处理后的视频
