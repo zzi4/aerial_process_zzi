@@ -4,7 +4,9 @@ import numpy as np
 from collections import defaultdict
 import tempfile
 from ultralytics import YOLO
-
+import torch
+import os
+torch.classes.__path__ = [os.path.join(torch.__path__[0], torch.classes.__file__)] 
 
 def annotate(results, track_history, default_size):
     # Get the boxes and track IDs
