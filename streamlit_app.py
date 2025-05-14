@@ -4,8 +4,7 @@ import numpy as np
 from collections import defaultdict
 import tempfile
 from ultralytics import YOLO
-import os
-# st.secrets['PATH'] = '/workspaces/aerial_process_zzi/best.pt'
+
 
 def annotate(results, track_history, default_size):
     # Get the boxes and track IDs
@@ -57,8 +56,6 @@ def main():
         temp_file.close()
 
         # 设置模型路径和保存路径
-        current_dir = os.getcwd()
-        print("当前工作目录:", current_dir)
 
         # 设置模型路径
         model_path = st.secrets["model_path"]
