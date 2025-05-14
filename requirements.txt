@@ -1,5 +1,7 @@
 numpy==2.2.5
-opencv-python-headless
-
-streamlit==1.45.1
+opencv-contrib-python==4.11.0.86
+opencv-python==4.11.0.86
+opencv-python-headless==4.11.0.86
 ultralytics==8.3.133
+ultralytics-thop==2.0.14
+
